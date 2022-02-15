@@ -13,6 +13,11 @@ export default function EditTask(props) {
   }
   return (
     <div className="form-container">
+      <h2>
+        <strong>Editing: </strong>
+        <span>{props.taskInfo.task}</span>
+      </h2>
+
       <form className="form" onSubmit={handleSubmit}>
         <input
           type="text"
